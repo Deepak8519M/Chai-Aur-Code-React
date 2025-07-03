@@ -2,6 +2,8 @@ import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 
+// import { jsx as _jsx } from "react/jsx-runtime.js";
+
 function MyApp() {
   return (
     <div>
@@ -35,4 +37,4 @@ const reactElement = React.createElement(
   "click me to visit google"
 );
 
-createRoot(document.getElementById("root")).render(reactElement);
+createRoot(document.getElementById("root")).render(<App />);
