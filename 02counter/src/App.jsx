@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
-  let counter = 15;
+  let [counter, setCounter] = useState(15);
 
   const addValue = () => {
-    counter = counter + 1;
     console.log("clicked", counter);
+
+    setCounter(counter + 1);
   };
 
   return (
